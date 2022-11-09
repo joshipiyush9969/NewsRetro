@@ -23,7 +23,7 @@ const TopHeadlinesScreen = (props) => {
 
     const newsResponse = async(CountId)=>{
         try{
-        const response = await NewsApi.get(`top-headlines?country=${CountId}&apiKey=7f3b12055f094388b4569740411d34a4`)
+        const response = await NewsApi.get(`top-headlines?country=${CountId}&apiKey=YOUR_API_KEY`)
         console.log(response)
         setNews(response.data)
         setIsNews(true);
