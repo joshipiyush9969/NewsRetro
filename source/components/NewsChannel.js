@@ -35,7 +35,7 @@ const NewsChannel = (props) => {
     const newsResponse = async(source)=>{
         try{       
         const date = dateFormater()
-        const response = await NewsApi.get(`everything?domains=${source}&sortBy=publishedAt&apiKey=7f3b12055f094388b4569740411d34a4`)
+        const response = await NewsApi.get(`everything?domains=${source}&sortBy=publishedAt&apiKey=YOUR_API_KEY`)
         console.log(response)
         setIsNews(true);
 
