@@ -49,7 +49,7 @@ const EverythingScreen = props => {
             LangId = props.navigation.getParam('language','en');
         }
         const date = dateFormater()
-        const response = await NewsApi.get(`everything?q=${term}&language=${LangId}&from=${date}&sortBy=publishedAt&apiKey=7f3b12055f094388b4569740411d34a4`)
+        const response = await NewsApi.get(`everything?q=${term}&language=${LangId}&from=${date}&sortBy=publishedAt&apiKey=YOUR_API_KEY`)
         console.log(response)
         setIsNews(true);
 
